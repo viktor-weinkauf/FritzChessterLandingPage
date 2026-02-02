@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fritz & Chesster - The Game That Builds Strategic Minds</title>
+    <meta name="description" content="Fritz & Chesster - The award-winning adventure game that teaches chess so naturally, children don't even realize they're learning." />
+    <meta name="author" content="ChessBase" />
+    <meta name="keywords" content="chess, children, learn chess, Fritz, Chesster, chess game, kids chess, educational game, strategy game" />
+
+    <!-- Content Security Policy - Updated to allow Meta Pixel -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://www.facebook.com; connect-src 'self' https://www.facebook.com;" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fritz & Chesster - The Game That Builds Strategic Minds" />
+    <meta property="og:description" content="The award-winning adventure game that teaches chess so naturally, children don't even realize they're learning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:url" content="https://chess-for-children.chessbase.com/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ChessBase" />
+    <meta name="twitter:title" content="Fritz & Chesster - The Game That Builds Strategic Minds" />
+    <meta name="twitter:description" content="The award-winning adventure game that teaches chess so naturally, children don't even realize they're learning." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <link rel="canonical" href="https://chess-for-children.chessbase.com/" />
+
+    <!-- Meta Pixel Code -->
+    <!-- TODO: Replace YOUR_PIXEL_ID with the actual Facebook Pixel ID from the client -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('consent', 'revoke'); // Revoke consent by default until user accepts cookies
+        fbq('init', 'YOUR_PIXEL_ID'); // TODO: Replace with actual Pixel ID
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+    <!-- Font Preloading for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lobster&family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&family=Chewy&family=Lilita+One&family=Quicksand:wght@400;500;600;700&family=Righteous&family=Titan+One&family=Sigmar+One&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&family=Chewy&family=Lilita+One&family=Quicksand:wght@400;500;600;700&family=Righteous&family=Titan+One&family=Sigmar+One&display=swap" />
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

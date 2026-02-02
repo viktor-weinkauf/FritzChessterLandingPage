@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(where.exe:*)",
+      "Bash(dir /B \"C:\\\\Users\\\\Viktor\\\\Desktop\\\\Fritz_and_Chester_new\\\\fritz-chester-xmas-landing-main\")",
+      "Bash(npm run dev:*)",
+      "Bash(timeout:*)",
+      "Bash(dir:*)",
+      "Bash(where:*)",
+      "Bash(magick:*)",
+      "Bash(npx kill-port:*)"
+    ]
+  }
+}
