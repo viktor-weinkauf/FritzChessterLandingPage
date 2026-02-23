@@ -10,3 +10,4 @@ export { FooterCTA } from "./FooterCTA";
 export { FeatureCard } from "./FeatureCard";
 export { StarField } from "./StarField";
 export { CookieConsent } from "./CookieConsent";
+export { FAQSection } from "./FAQSection";
