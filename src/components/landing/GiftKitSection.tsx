@@ -73,7 +73,7 @@ export const GiftKitSection = () => {
           }`}
         >
           <h2 className="font-lobster text-3xl md:text-5xl mb-4 drop-shadow-lg">
-            Ready to Play in Minutes
+            Start Learning Chess in Minutes
             <Sparkles className="inline-block w-8 h-8 ml-3 animate-pulse" />
           </h2>
           <p className="font-fredoka-original text-xl opacity-90 max-w-xl mx-auto">
