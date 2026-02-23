@@ -10,10 +10,10 @@ export const StorySection = () => (
         <div className="flex-1">
           <div className="royal-card p-8 md:p-10" style={{ borderColor: '#e33913' }}>
             <h2 className="font-lobster text-3xl md:text-4xl text-foreground mb-2">
-              A Kingdom in <span style={{ color: '#e33913' }}>Crisis</span>
+              A Chess Kingdom in <span style={{ color: '#e33913' }}>Crisis</span>
             </h2>
             <h3 className="font-lobster text-2xl md:text-3xl mb-8" style={{ color: '#21368c' }}>
-              A Duel for the Crown
+              Your Child's First Chess Adventure
             </h3>
 
             <div className="space-y-4 font-fredoka-original text-foreground/80 leading-relaxed">
