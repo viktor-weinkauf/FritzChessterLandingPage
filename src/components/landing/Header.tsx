@@ -74,11 +74,13 @@ export const Header = () => (
       {/* Spacer - only shows between 680px and xl to center trophy */}
       <div className="hidden min-[680px]:block min-[680px]:flex-1 xl:hidden" />
       {/* Trophy - hidden between 490px and 680px */}
-      <img
-        src={trophy}
-        alt="Trophy"
-        className="hidden min-[430px]:block min-[490px]:hidden min-[680px]:block h-12 md:h-14 lg:h-20 w-auto object-contain -my-2 xl:ml-4"
-      />
+      <a href="/">
+        <img
+          src={trophy}
+          alt="Trophy"
+          className="hidden min-[430px]:block min-[490px]:hidden min-[680px]:block h-12 md:h-14 lg:h-20 w-auto object-contain -my-2 xl:ml-4"
+        />
+      </a>
       {/* Spacer - only shows between 680px and xl to center trophy */}
       <div className="hidden min-[680px]:block min-[680px]:flex-1 xl:hidden" />
       {/* Buy Now - Hidden below 490px */}
@@ -91,7 +93,7 @@ export const Header = () => (
         aria-label={`Buy Fritz and Chesster game for ${formatPrice()}`}
       >
         <Gamepad2 className="w-4 h-4" aria-hidden="true" />
-        <span className="hidden min-[850px]:inline">Buy Now – </span>{formatPrice()}
+        <span className="hidden min-[850px]:inline">Buy Now – {formatPrice()}</span>
       </a>
     </div>
   </header>

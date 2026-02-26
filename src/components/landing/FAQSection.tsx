@@ -1,43 +1,47 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: ReactNode;
 }
+
+const B = ({ children, color = '#21368c' }: { children: ReactNode; color?: string }) => (
+  <strong style={{ color }}>{children}</strong>
+);
 
 const faqItems: FAQItem[] = [
   {
     question: "What age is Fritz & Chesster suitable for?",
-    answer: "Fritz & Chesster is designed for children ages 4–12. Younger kids (4–6) enjoy the mini-games and puzzles with a parent’s help, while older children (7–12) can play independently and progress through the full chess curriculum at their own pace."
+    answer: <>Fritz & Chesster is designed for <B>children ages 4–12</B>. Younger kids (4–6) enjoy the mini-games and puzzles with a parent's help, while older children (7–12) can <B>play independently</B> and progress through the full chess curriculum at their own pace.</>
   },
   {
     question: "Does my child need to know chess already?",
-    answer: "Not at all! Fritz & Chesster is designed for complete beginners. The game starts with the very basics — how pieces move, what the board looks like — and builds up to full chess games through fun adventures and mini-games. It’s the perfect way to introduce chess."
+    answer: <><B color="#e33913">Not at all!</B> Fritz & Chesster is designed for <B>complete beginners</B>. The game starts with the very basics — how pieces move, what the board looks like — and builds up to full chess games through fun adventures and mini-games. It's the <B>perfect way to introduce chess</B>.</>
   },
   {
     question: "What devices can Fritz & Chesster run on?",
-    answer: "Fritz & Chesster works on Windows PCs, Mac (via browser), iPads, Android tablets, and Chromebooks. It runs in any modern web browser — no downloads or installation needed."
+    answer: <>Fritz & Chesster works on <B>Windows PCs, Mac (via browser), iPads, Android tablets, and Chromebooks</B>. It runs in <B>any modern web browser</B> — no downloads or installation needed.</>
   },
   {
     question: "How long does it take for kids to learn chess?",
-    answer: "Most children start understanding basic moves within 15–20 minutes. The full curriculum spans roughly 10–15 hours of gameplay. Kids move at their own pace, and the game saves progress automatically so they can pick up right where they left off."
+    answer: <>Most children start understanding basic moves within <B>15–20 minutes</B>. The full curriculum spans roughly 10–15 hours of gameplay. Kids move at their own pace, and the game <B>saves progress automatically</B> so they can pick up right where they left off.</>
   },
   {
     question: "Is Fritz & Chesster available in my language?",
-    answer: "Yes! Fritz & Chesster is available in 12 languages: English, German, Spanish, French, Italian, Portuguese, Dutch, Polish, Russian, Swedish, Danish, and Norwegian. Perfect for international families."
+    answer: <>Yes! Fritz & Chesster is available in <B color="#e33913">12 languages</B>: English, German, Spanish, French, Italian, Portuguese, Dutch, Polish, Russian, Swedish, Danish, and Norwegian. <B>Perfect for international families.</B></>
   },
   {
     question: "Is this a subscription or a one-time purchase?",
-    answer: "Fritz & Chesster Volume 1 is a one-time purchase — no subscriptions, no in-app purchases, no ads. You buy it once and the child has unlimited access to the full game forever."
+    answer: <>Fritz & Chesster Volume 1 is a <B color="#e33913">one-time purchase</B> — no subscriptions, no in-app purchases, no ads. You buy it once and the child has <B>unlimited access to the full game forever</B>.</>
   },
   {
     question: "How does Fritz & Chesster compare to other chess apps for kids?",
-    answer: "Unlike drill-based apps, Fritz & Chesster teaches chess through an adventure story with characters, mini-games, and puzzles. It’s award-winning, available in 12 languages, and has been trusted by parents for over 20 years. Children learn without realizing they’re being taught."
+    answer: <>Unlike drill-based apps, Fritz & Chesster teaches chess through an <B>adventure story</B> with characters, mini-games, and puzzles. It's <B color="#e33913">award-winning</B>, available in 12 languages, and has been <B>trusted by parents for over 20 years</B>. Children learn without realizing they're being taught.</>
   },
   {
     question: "Can siblings share one purchase?",
-    answer: "Each purchase supports multiple player profiles, so siblings can each have their own save game and progress at their own pace. If you’re buying for kids in different households, you’ll need separate purchases."
+    answer: <>Each purchase supports <B>multiple player profiles</B>, so siblings can each have their own save game and progress at their own pace. If you're buying for kids in different households, you'll need separate purchases.</>
   }
 ];
 
@@ -64,9 +68,9 @@ const FAQItem = ({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; o
         isOpen ? 'max-h-96 opacity-100 pb-5' : 'max-h-0 opacity-0'
       }`}
     >
-      <p className="font-fredoka-original text-sm text-muted-foreground leading-relaxed px-2">
+      <div className="font-fredoka-original text-sm text-muted-foreground leading-relaxed px-2">
         {item.answer}
-      </p>
+      </div>
     </div>
   </div>
 );
@@ -103,11 +107,12 @@ export const FAQSection = () => {
           }`}
         >
           <div className="text-center mb-10">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-4 bg-gradient-to-br from-yellow-400/30 to-orange-400/30">
-              <HelpCircle className="w-7 h-7 text-yellow-600" aria-hidden="true" />
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-4 bg-gradient-to-br from-yellow-400/30 to-orange-400/30
+              hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-default">
+              <HelpCircle className="w-7 h-7" style={{ color: '#e33913' }} aria-hidden="true" />
             </div>
             <h2 className="font-lobster text-3xl md:text-4xl mb-3" style={{ color: '#21368c' }}>
-              Chess for Kids — Frequently Asked Questions
+              <span style={{ color: '#e33913' }}>Chess for Kids</span> — Frequently Asked Questions
             </h2>
             <p className="font-fredoka-original text-muted-foreground max-w-xl mx-auto">
               Everything parents ask before getting Fritz & Chesster for their children.

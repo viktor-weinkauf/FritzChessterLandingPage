@@ -93,7 +93,7 @@ export const GiftKitSection = () => {
               )}
 
               <div
-                className={`parchment rounded-2xl p-6 text-center relative z-10
+                className={`parchment rounded-2xl p-6 text-center relative z-10 h-full
                   hover:shadow-2xl hover:-translate-y-2 transition-all duration-500
                   ${stepsVisible[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               >

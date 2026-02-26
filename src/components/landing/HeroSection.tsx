@@ -47,14 +47,14 @@ export const HeroSection = () => {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              The Game That Builds{" "}
+              <span style={{ color: '#e33913' }}>Fritz</span> <span style={{ color: '#5a7fee' }}>&</span> <span style={{ color: '#e33913' }}>Chesster</span> — The Game That Builds{" "}
               <span
                 className="gradient-text inline-block"
                 style={{ whiteSpace: 'nowrap' }}
               >
                 Strategic Minds
+                <Sparkles className="inline-block w-8 h-8 ml-2 text-yellow-300 animate-pulse" />
               </span>
-              <Sparkles className="inline-block w-8 h-8 ml-2 text-yellow-300 animate-pulse" />
             </h1>
 
             {/* Castle Card - order 2 in portrait (appears after title), hidden in landscape */}
