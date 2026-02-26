@@ -57,7 +57,7 @@ export const BenefitsSection = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              <span style={{ color: '#21368c' }}>Win the War on</span>{" "}
+              <span style={{ color: '#21368c' }}>Kids Chess That Wins the War on</span>{" "}
               <span style={{ color: '#e33913' }} className="relative inline-block">
                 "Screen Time"
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">

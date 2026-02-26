@@ -5,10 +5,10 @@ export const TechSpecsSection = () => (
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
         <h2 className="font-lobster text-3xl md:text-4xl mb-3" style={{ color: '#21368c' }}>
-          Works on New Tech & Old Tech
+          Play Chess on Any Device — New Tech & Old Tech
         </h2>
         <p className="font-fredoka-original text-muted-foreground">
-          Visiting relatives? Using an old laptop? No problem.
+          Visiting relatives? Using an old laptop? Fritz & Chesster runs everywhere.
         </p>
       </div>
 

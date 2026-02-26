@@ -1,4 +1,4 @@
-﻿import { Brain, Sparkles, Rocket, Globe, ChevronRight } from "lucide-react";
+import { Brain, Sparkles, Rocket, Globe, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import castleScene from "@/assets/Castle.webp";
 import fredTheRat from "@/assets/fred-the-rat.png";
@@ -42,7 +42,7 @@ export const HeroSection = () => {
           {/* Left Content - contains title, subtitle, pills, and CTA */}
           <div className="flex-1 w-full text-center landscape:lg:text-left flex flex-col">
             {/* Title - order 1 always */}
-            <h2
+            <h1
               className={`font-lobster text-4xl md:text-5xl lg:text-6xl text-white mb-6 pb-2 leading-[1.4] overflow-visible order-1 transition-all duration-1000 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
@@ -55,7 +55,7 @@ export const HeroSection = () => {
                 Strategic Minds
               </span>
               <Sparkles className="inline-block w-8 h-8 ml-2 text-yellow-300 animate-pulse" />
-            </h2>
+            </h1>
 
             {/* Castle Card - order 2 in portrait (appears after title), hidden in landscape */}
             <div
