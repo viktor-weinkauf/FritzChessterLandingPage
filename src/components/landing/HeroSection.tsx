@@ -47,7 +47,7 @@ export const HeroSection = () => {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              <span style={{ color: '#e33913' }}>Fritz</span> <span style={{ color: '#5a7fee' }}>&</span> <span style={{ color: '#e33913' }}>Chesster</span> — The Game That Builds{" "}
+              <span style={{ color: '#e33913', textShadow: '0 0 12px rgba(200,120,60,0.8)' }}>Fritz</span> <span style={{ color: '#21368c', textShadow: '0 0 8px rgba(255,255,255,0.6)' }}>&</span> <span style={{ color: '#e33913', textShadow: '0 0 12px rgba(200,120,60,0.8)' }}>Chesster</span> — The Game That Builds{" "}
               <span
                 className="gradient-text inline-block"
                 style={{ whiteSpace: 'nowrap' }}
