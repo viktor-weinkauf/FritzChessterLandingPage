@@ -127,7 +127,7 @@ export const techSpecs: TechSpec[] = [
   }
 ];
 
-export const PRICE = "29.90";
+export const PRICE = "29.00";
 export const CURRENCY = "EUR";
 
 export const formatPrice = (amount: string = PRICE, currency: string = CURRENCY): string => {
